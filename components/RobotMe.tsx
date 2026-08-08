@@ -56,7 +56,7 @@ export function RobotMe({ className = "" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 240 260"
-      className={`h-auto w-full overflow-visible ${className}`}
+      className={`block h-auto w-full max-w-full ${className}`}
       role="img"
       aria-label="Robô com o rosto do Gustavo na tela"
     >

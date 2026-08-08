@@ -237,14 +237,14 @@ export const projects: Project[] = [
     id: "dashboards",
     spark: { pt: "dados em painel", en: "data on a panel" },
     title: {
-      pt: "Dashboards corporativos · Yamaha e Ominet",
-      en: "Corporate dashboards · Yamaha and Ominet",
+      pt: "Dashboards corporativos para grandes contas",
+      en: "Corporate dashboards for large accounts",
     },
     category: { pt: "Dados & BI", en: "Data & BI" },
     year: "2024",
     summary: {
-      pt: "Painéis operacionais e gerenciais construídos para grandes contas, consolidando dados de vendas, operação e indicadores em uma leitura única. As telas não podem ser exibidas por acordo de confidencialidade.",
-      en: "Operational and management dashboards built for large accounts, consolidating sales, operations and KPI data into a single read. The screens can't be shown due to a confidentiality agreement.",
+      pt: "Painéis operacionais e gerenciais para empresas de grande porte — indústria e telecom —, consolidando dados de vendas, operação e indicadores em uma leitura única. Cliente, telas e números ficam de fora por acordo de confidencialidade.",
+      en: "Operational and management dashboards for large companies — manufacturing and telecom — consolidating sales, operations and KPI data into a single read. Client, screens and numbers are withheld under a confidentiality agreement.",
     },
     highlights: [
       {

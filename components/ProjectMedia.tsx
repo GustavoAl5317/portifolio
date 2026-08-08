@@ -47,7 +47,7 @@ export function ProjectMedia({ project }: { project: Project }) {
 
 function Frame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mt-6 overflow-x-auto rounded-xl border border-borderline bg-surface p-4">
+    <div className="mt-6 overflow-hidden rounded-xl border border-borderline bg-surface p-3 sm:p-4">
       {children}
     </div>
   );
@@ -93,17 +93,13 @@ function Shot({
         {exists === undefined ? (
           <div className="aspect-[16/9] w-full animate-pulse bg-surface2" />
         ) : (
-          // Capturas são largas: no mobile rolam na horizontal dentro do quadro,
-          // em vez de espremer a interface até ficar ilegível.
-          <div className="overflow-x-auto">
-            {/* eslint-disable-next-line @next/next/no-img-element -- captura estática */}
-            <img
-              src={src}
-              alt={alt}
-              className="block w-full min-w-[520px] max-w-none"
-              loading="lazy"
-            />
-          </div>
+          /* eslint-disable-next-line @next/next/no-img-element -- captura estática */
+          <img
+            src={src}
+            alt={alt}
+            className="block h-auto w-full max-w-full"
+            loading="lazy"
+          />
         )}
       </div>
       <figcaption className="mt-2.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">

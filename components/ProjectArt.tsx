@@ -39,9 +39,7 @@ export function ProjectArt({ diagram }: { diagram: Diagram }) {
   return (
     <svg
       viewBox={`0 0 ${W} ${H}`}
-      // min-width: abaixo disso os rótulos das caixas ficariam ilegíveis,
-      // então o diagrama rola na horizontal dentro do card.
-      className="h-auto w-full min-w-[400px]"
+      className="block h-auto w-full max-w-full"
       role="img"
       aria-label={tx(diagram.hub.title)}
     >

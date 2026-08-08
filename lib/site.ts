@@ -9,8 +9,7 @@ export const site = {
     en: "Integrations & AI developer",
   },
   email: "gsantana.dev@hotmail.com",
-  /** Ex.: "https://github.com/seu-usuario" */
-  github: "",
+  github: "https://github.com/GustavoAl5317",
   /** Ex.: "https://linkedin.com/in/seu-perfil" */
   linkedin: "",
   /** Só os dígitos com DDI. */

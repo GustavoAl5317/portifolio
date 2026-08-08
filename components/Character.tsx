@@ -125,7 +125,7 @@ export function Character({ brainRef, pulseKey = 0, className = "" }: Props) {
     <div className={`relative ${className}`}>
       <svg
         viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-        className="w-full h-auto overflow-visible"
+        className="block h-auto w-full max-w-full"
         role="img"
         aria-label="Ilustração do Gustavo digitando"
       >
