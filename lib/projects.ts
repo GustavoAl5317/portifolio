@@ -226,7 +226,7 @@ export const projects: Project[] = [
       ],
     },
     shot: {
-      src: "/interatell.png",
+      src: "/omie.png",
       alt: {
         pt: "Tela de processos puxando negócios fechados do Bitrix24 para envio ao Omie",
         en: "Process screen pulling closed Bitrix24 deals to send into Omie",
