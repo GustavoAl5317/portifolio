@@ -23,7 +23,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <Reveal>
+        <Reveal className="text-center sm:text-left">
           <div className="relative overflow-hidden rounded-3xl border border-borderline bg-surface p-8 sm:p-14">
             <div className="pointer-events-none absolute inset-0 -z-10 wash opacity-60" />
 
@@ -33,9 +33,9 @@ export function Contact() {
             <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
               {t(ui.contactTitle)}
             </h2>
-            <p className="mt-4 max-w-xl text-lg text-muted">{t(ui.contactSub)}</p>
+            <p className="mx-auto mt-4 max-w-xl text-lg text-muted sm:mx-0">{t(ui.contactSub)}</p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="mt-9 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
               <a
                 href={`mailto:${site.email}`}
                 className="rounded-xl bg-accent px-5 py-3 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"

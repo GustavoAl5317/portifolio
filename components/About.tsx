@@ -19,11 +19,11 @@ export function About() {
       <section id="about" className="relative py-24 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)]">
-            <Reveal>
+            <Reveal className="text-center sm:text-left">
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-accent">
                 {t(ui.aboutTitle)}
               </p>
-              <div className="mt-6 max-w-2xl space-y-5 text-lg leading-relaxed text-muted">
+              <div className="mx-auto mt-6 max-w-2xl space-y-5 text-center text-lg leading-relaxed text-muted sm:mx-0 sm:text-left">
                 <p className="text-foreground/90">{t(ui.aboutP1)}</p>
                 <p>{t(ui.aboutP2)}</p>
                 <p>{t(ui.aboutP3)}</p>

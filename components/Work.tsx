@@ -157,7 +157,7 @@ export function Work() {
   return (
     <section id="work" ref={sectionRef} className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <Reveal className="max-w-2xl">
+        <Reveal className="max-w-2xl text-center sm:text-left">
           <p className="font-mono text-xs uppercase tracking-[0.28em] text-accent">
             {t(ui.workKicker)}
           </p>
@@ -198,7 +198,7 @@ export function Work() {
                 data-active={i === active}
                 className="card relative overflow-hidden rounded-2xl border border-borderline bg-background p-6 sm:p-8"
               >
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
                   <span className="font-mono text-xs text-accent">
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -215,17 +215,17 @@ export function Work() {
                   )}
                 </div>
 
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+                <h3 className="mt-4 text-center text-2xl font-semibold tracking-tight sm:text-left">
                   {t(p.title)}
                 </h3>
-                <p className="mt-3 leading-relaxed text-muted">
+                <p className="mt-3 text-center leading-relaxed text-muted sm:text-left">
                   {t(p.summary)}
                 </p>
 
                 {/* captura real, telefone, aviso ou diagrama do fluxo */}
                 <ProjectMedia project={p} />
 
-                <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.22em] text-muted">
+                <p className="mt-6 text-center font-mono text-[10px] uppercase tracking-[0.22em] text-muted sm:text-left">
                   {t(ui.highlightsLabel)}
                 </p>
                 <ul className="mt-3 space-y-2">
@@ -237,7 +237,7 @@ export function Work() {
                   ))}
                 </ul>
 
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="mt-6 flex flex-wrap justify-center gap-2 sm:justify-start">
                   {p.stack.map((s) => (
                     <span
                       key={s}

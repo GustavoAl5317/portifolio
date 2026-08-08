@@ -52,7 +52,7 @@ function SequenceCopy({ progress }: { progress: number }) {
               {t(ui.heroLine3)}
             </span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted sm:mx-0">
             {t(ui.heroSub)}
           </p>
           <p className="mt-10 font-mono text-[11px] uppercase tracking-[0.24em] text-muted">
@@ -109,7 +109,8 @@ function StaticHero() {
       <div className="pointer-events-none absolute inset-0 -z-10 bg-grid" />
 
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)]">
-        <div>
+        {/* no mobile tudo vem centralizado; a partir de sm volta a alinhar à esquerda */}
+        <div className="text-center sm:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-borderline bg-surface px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
             <span className="anim-spark h-1.5 w-1.5 rounded-full bg-accent" />
             {t(ui.heroKicker)}
@@ -123,11 +124,11 @@ function StaticHero() {
             </span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted sm:mx-0">
             {t(ui.heroSub)}
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-3">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
             <a
               href="#work"
               className="rounded-xl bg-accent px-5 py-3 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
